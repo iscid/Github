@@ -1,0 +1,60 @@
+1.- Crear un repositorio en GitHub
+
+- Acceder a Github. 
+- Clic sobre New repository.
+- Asignar un nombre y seleccionar entre público o privado.
+- Continuar sin marcar la opción de inicializar README.
+- Copiar la URL del repositorio creado.
+
+2.- Configurar Git en la PC
+
+git config --global user.name "TuNombre"
+git config --global user.email "tuemail@email.com"
+
+3.- Subir el proyecto a GitHub
+
+Si ya existe una carpeta en la PC, el proyecto se sube desde la terminal con los siguientes comandos:
+
+# Entra en la carpeta del proyecto
+cd ruta/del/proyecto
+
+# Inicializa un repositorio local en Git
+git init
+
+# Añade todos los archivos al repositorio
+git add .
+
+# Guarda todos los archivos al repositorio
+git commit -m "Primer commit"
+
+# Cambia a la rama principal (main)
+git branch -M main
+
+# Conéctalo con GitHub
+git remote add origin URL_DEL_REPOSITORIO
+
+# Sube los archivos a GitHub
+git push -u origin main
+
+*Adicional Verificar si ya existe una configuración de nombre y correo en la PC
+
+git config --global user.name
+git config --global user.email
+git config --list
+
+*Cambiar el usuario y el correo
+
+git config --global user.name "NuevoNombre"
+git config --global user.email "nuevoemail@email.com"
+
+*Eliminar el usuario y el correo
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+*Comprobar los camnios
+
+git config --list
+git config --global user.name
+git config --global user.email
+
