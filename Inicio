@@ -1,0 +1,14 @@
+Desde la carpeta del proyecto
+
+El proyecto ya debe estar creado en GitHub
+
+git init
+git add .
+git commit -m "Primer commit"
+git remote add origin https://github.com/tu_usuario/tu_repositorio.git
+git push -u origin master
+
+Para subir cambios
+git add .
+git commit -m "Descripcion del cambio"
+git push
